@@ -2079,6 +2079,7 @@ textarea.form-control {
 }
 
 .form-group {
+  text-align: center; /* 子要素を右寄せに */
   margin-bottom: 1rem;
 }
 
@@ -2412,9 +2413,15 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary {
+  display: inline-block; /* ボタンをインライン要素として扱う */
+  padding: 20px 40px;
+  font-size: 18px;
   color: #fff;
   background-color: #2A4B7C;
   border-color: #2A4B7C;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 .btn-primary:hover {
   color: #fff;
