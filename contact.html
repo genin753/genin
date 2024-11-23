@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>下人ブログ</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Free Website Template" name="keywords">
+        <meta content="Free Website Template" name="description">
+
+        <!-- Favicon -->
+        <link href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW-D47QB2WdUNKK8Vpwh2FPOWmG1H6uXYCaA&s" rel="icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:300;400;600;700;800&display=swap" rel="stylesheet">
+
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="myblog.css" rel="stylesheet">
+    </head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <!-- Navbar Start -->
+            <div class="container p-0">
+                <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
+                    <a href="" class="navbar-brand d-block d-lg-none">下人ブログ</a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav m-auto">
+                            <a href="index.html" class="nav-item nav-link">ホーム</a>
+                            <a href="about.html" class="nav-item nav-link">筆者紹介</a>
+                            <a href="contact.html" class="nav-item nav-link active">連絡</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- Navbar End -->
+
+            <!-- Page Header Start -->
+            <div class="container py-5 px-2 bg-primary">
+                <div class="row py-5 px-4">
+                    <div class="col-sm-6 text-center text-md-left">
+                        <h1 class="mb-3 mb-md-0 text-white text-uppercase font-weight-bold">連絡フォーム（現在作成中）</h1>
+                    </div>
+                    <div class="col-sm-6 text-center text-md-right">
+                        <div class="d-inline-flex pt-2">
+                            <h4 class="m-0 text-white"><a class="text-white" href="index.html">ホーム</a></h4>
+                            <h4 class="m-0 text-white px-2">/</h4>
+                            <h4 class="m-0 text-white">連絡してね</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Page Header End -->
+
+
+            <!-- Contact Start -->
+            <div class="container bg-white pt-5">
+                <div class="row px-3 pb-2">
+                    <div class="col-sm-4 text-center mb-3">
+                        <i class="fa fa-2x fa-map-marker-alt mb-3 text-primary"></i>
+                        <h4 class="font-weight-bold">住所</h4>
+                        <p>非公開</p>
+                    </div>
+                    <div class="col-sm-4 text-center mb-3">
+                        <i class="fa fa-2x fa-phone-alt mb-3 text-primary"></i>
+                        <h4 class="font-weight-bold">電話番号</h4>
+                        <p>非公開</p>
+                    </div>
+                    <div class="col-sm-4 text-center mb-3">
+                        <i class="far fa-2x fa-envelope mb-3 text-primary"></i>
+                        <h4 class="font-weight-bold">Email</h4>
+                        <p>非公開</p>
+                    </div>
+                </div>
+                <div class="col-md-12 pb-5">
+                    <div class="contact-form">
+                        <div id="success"></div>
+                        <form name="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe5Bfxh25SmV--pD9RFLmuHf4Rl523yYggQxpUx8mQOGFW4yA/formResponse" method="POST" id="contactForm" novalidate="novalidate" target="hidden_iframe" onsubmit="submitted=true;">
+                            <div class="control-group">
+                                <input name="entry.1994272037" type="text" class="form-control" id="name" placeholder="名前" required="required" data-validation-required-message="名前を入力してください" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <input name="entry.2003593281" type="email" class="form-control" id="email" placeholder="メールアドレス" required="required" data-validation-required-message="メールアドレスを入力してください" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <textarea name="entry.687867046" class="form-control" rows="8" id="message" placeholder="メッセージ" required="required" data-validation-required-message="メッセージを入力してください"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary" type="submit" id="sendMessageButton">現在送信不可</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+                let submitted = false;
+            </script>
+            <iframe
+                name="hidden_iframe"
+                id="hidden_iframe"
+                style="display: none"
+                onload="if(submitted){window.location='contact.html';}"
+            ></iframe>
+            <!-- Contact End -->
+
+
+            <!-- Footer Start -->
+            <div class="container py-4 bg-secondary text-center">
+                <p class="m-0 text-white">
+                    &copy; <a class="text-white font-weight-bold" href="#">下人ブログ</a> 作成者：下人
+                </p>
+            </div>
+            <!-- Footer End -->
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="easing.min.js"></script>
+    <script src="waypoints.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="jqBootstrapValidation.min.js"></script>
+    <script src="contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="myblog.js"></script>
+</body>
+
+</html>
