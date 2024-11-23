@@ -54,7 +54,7 @@
             <div class="container py-5 px-2 bg-primary">
                 <div class="row py-5 px-4">
                     <div class="col-sm-6 text-center text-md-left">
-                        <h1 class="mb-3 mb-md-0 text-white text-uppercase font-weight-bold">連絡フォーム（現在作成中）</h1>
+                        <h1 class="mb-3 mb-md-0 text-white text-uppercase font-weight-bold">連絡フォーム</h1>
                     </div>
                     <div class="col-sm-6 text-center text-md-right">
                         <div class="d-inline-flex pt-2">
@@ -70,41 +70,21 @@
 
             <!-- Contact Start -->
             <div class="container bg-white pt-5">
-                <div class="row px-3 pb-2">
-                    <div class="col-sm-4 text-center mb-3">
-                        <i class="fa fa-2x fa-map-marker-alt mb-3 text-primary"></i>
-                        <h4 class="font-weight-bold">住所</h4>
-                        <p>非公開</p>
-                    </div>
-                    <div class="col-sm-4 text-center mb-3">
-                        <i class="fa fa-2x fa-phone-alt mb-3 text-primary"></i>
-                        <h4 class="font-weight-bold">電話番号</h4>
-                        <p>非公開</p>
-                    </div>
-                    <div class="col-sm-4 text-center mb-3">
-                        <i class="far fa-2x fa-envelope mb-3 text-primary"></i>
-                        <h4 class="font-weight-bold">Email</h4>
-                        <p>非公開</p>
-                    </div>
-                </div>
                 <div class="col-md-12 pb-5">
                     <div class="contact-form">
                         <div id="success"></div>
-                        <form name="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe5Bfxh25SmV--pD9RFLmuHf4Rl523yYggQxpUx8mQOGFW4yA/formResponse" method="POST" id="contactForm" novalidate="novalidate" target="hidden_iframe" onsubmit="submitted=true;">
-                            <div class="control-group">
-                                <input name="entry.1994272037" type="text" class="form-control" id="name" placeholder="名前" required="required" data-validation-required-message="名前を入力してください" />
-                                <p class="help-block text-danger"></p>
+                        <form action="https://docs.google.com/forms/d/e/1FAIpQLSe5Bfxh25SmV--pD9RFLmuHf4Rl523yYggQxpUx8mQOGFW4yA/formResponse" target="hidden_iframe" method="post" onsubmit="return test(this.wcheck.value)">
+                            <div class="form-group">
+                                <p><input name="entry.1994272037" placeholder="名前" value="名無し" type="text" class="form-control" id="name" required></p>
                             </div>
-                            <div class="control-group">
-                                <input name="entry.2003593281" type="email" class="form-control" id="email" placeholder="メールアドレス" required="required" data-validation-required-message="メールアドレスを入力してください" />
-                                <p class="help-block text-danger"></p>
+                            <div class="form-group">
+                                <p><input name="entry.2003593281" placeholder="メールアドレス(返信希望者のみ)" type="email" class="form-control" id="email"></p>
                             </div>
-                            <div class="control-group">
-                                <textarea name="entry.687867046" class="form-control" rows="8" id="message" placeholder="メッセージ" required="required" data-validation-required-message="メッセージを入力してください"></textarea>
-                                <p class="help-block text-danger"></p>
+                            <div class="form-group">
+                                <p><textarea name="entry.687867046" placeholder="メッセージ" rows="10" cols="40" maxlength="400" id="message" class="form-control" required></textarea></p>
                             </div>
-                            <div>
-                                <button class="btn btn-primary" type="submit" id="sendMessageButton">現在送信不可</button>
+                            <div class="form-group">
+                                <button class="btn btn-primary" type="submit" id="sendMessageButton">送信</button>
                             </div>
                         </form>
                     </div>
