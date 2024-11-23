@@ -9894,4 +9894,15 @@ h3 {
   }
 }
 
+.hide-desktop {
+  display: none;
+}
+
+/* スマホ（最大幅767px）で非表示 */
+@media screen and (max-width: 767px) {
+  .hide-desktop {
+      display: block;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
