@@ -9879,4 +9879,15 @@ h3 {
   list-style-type: none;
 }
 
+.show-desktop {
+  display: block;
+}
+
+/* スマホ（最大幅767px）で非表示 */
+@media screen and (max-width: 767px) {
+  .show-desktop {
+      display: none;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
