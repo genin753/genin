@@ -85,7 +85,7 @@
                 <div class="col-md-12 pb-5">
                     <div class="contact-form">
                         <div id="success"></div>
-                        <form action="https://docs.google.com/forms/d/e/1FAIpQLSe5Bfxh25SmV--pD9RFLmuHf4Rl523yYggQxpUx8mQOGFW4yA/formResponse" target="hidden_iframe" method="post" onsubmit="return test(this.wcheck.value)">
+                        <form action="https://docs.google.com/forms/d/e/1FAIpQLSe5Bfxh25SmV--pD9RFLmuHf4Rl523yYggQxpUx8mQOGFW4yA/formResponse" target="hidden_iframe" method="post" onsubmit="submitted=true;">
                             <div class="form-group">
                                 <p><input name="entry.1994272037" placeholder="名前" value="名無し" type="text" class="form-control" id="name" required></p>
                             </div>
@@ -99,6 +99,7 @@
                                 <button class="btn btn-primary" type="submit" id="sendMessageButton">送信</button>
                             </div>
                         </form>
+                        <p>※送信完了後自動的にホームへ飛ばされます。</p>
                     </div>
                 </div>
             </div>
@@ -109,7 +110,7 @@
                 name="hidden_iframe"
                 id="hidden_iframe"
                 style="display: none"
-                onload="if(submitted){window.location='contact.html';}"
+                onload="if(submitted){window.location='index.html';}"
             ></iframe>
             <!-- Contact End -->
 
